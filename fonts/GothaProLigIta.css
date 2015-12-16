@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GothaProLigIta';
+    src: url('fonts/GothaProLigIta.eot');
+    src: url('fonts/GothaProLigIta.eot') format('embedded-opentype'),
+         url('fonts/GothaProLigIta.woff2') format('woff2'),
+         url('fonts/GothaProLigIta.woff') format('woff'),
+         url('fonts/GothaProLigIta.ttf') format('truetype'),
+         url('fonts/GothaProLigIta.svg#GothaProLigIta') format('svg');
+}

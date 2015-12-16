@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('fonts/DINProRegular.eot');
+    src: url('fonts/DINProRegular.eot') format('embedded-opentype'),
+         url('fonts/DINProRegular.woff2') format('woff2'),
+         url('fonts/DINProRegular.woff') format('woff'),
+         url('fonts/DINProRegular.ttf') format('truetype'),
+         url('fonts/DINProRegular.svg#DINProRegular') format('svg');
+}

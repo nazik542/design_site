@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GothaProNarMed';
+    src: url('fonts/GothaProNarMed.eot');
+    src: url('fonts/GothaProNarMed.eot') format('embedded-opentype'),
+         url('fonts/GothaProNarMed.woff2') format('woff2'),
+         url('fonts/GothaProNarMed.woff') format('woff'),
+         url('fonts/GothaProNarMed.ttf') format('truetype'),
+         url('fonts/GothaProNarMed.svg#GothaProNarMed') format('svg');
+}
