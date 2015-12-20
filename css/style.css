@@ -1,5 +1,142 @@
+
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	padding: 0;
+}
+body{
+	font-family: 'DINProRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.container{
+	width: 90%;
+	max-width: 1760px;
+	margin: 0 auto;
+}
+.clr{
+	clear: both;
+}
+.top_header{
+	height: 120px;
+	background: url(../img/background_nav.jpg) no-repeat;
+	background-Size: cover;
+	width: 100%;
+}
+.main_header nav{
+	height: 60px;
+	text-align: center;
+	width: 100%;
+	background: #353333;
+	line-height: 60px;
+	position: relative;
+}  
+.main_header nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 5%;
+}
+.main_header nav ul li a{  
+	font-size: 18px;
+}
+.language{
+	position: absolute;
+	top: 13px;
+	right: 5%
+}
+.main_header .language li{
+	list-style: none;
+	float: left;
+	margin: 0;
+	margin-left: 4px;
+}
+.language li a{
+	display: block;
+	width: 36px;
+	height: 34px;
+	margin-left: 1px;
+	background-image: url(../img/lang_icons.png);
+	background-size: cover;
+}
+li.ua a{
+	background-position: 36px;
+}
+li.ru a{
+	background-position: 73px;
+}
+.social{
+	position: fixed;
+	right: 5%;
+	top: 50%;
+	margin-top: -150px;
+}
+.social li{
+	list-style: none;
+}
+.social li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-top: 30px;
+	background-image: url(../img/social_icons.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+li.facebook a{
+	background-position: 0 -30px;
+}
+li.twitter a{
+	background-position: 0 -60px;
+}
+li.instagram a{
+	background-position: 0 -90px;
+}
+li.vk a{
+	background-position: 0 -120px;
+}
+.main_section{
+	background:url(../img/background_header.png)no-repeat;
+	background-position: center;
+	background-size: 75%; 
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.main_section .background{
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	font-size: 20px;
+}
+.main_section .logo{
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+}
+.main_section .logo img{ 
+	width: 100%;
+	height: auto;
+}
+/****************************/
+.img_block{
+	width: 62%;
+	float: left;
+}
+.img_block img{
+	width: 100%;
+}
+.text_block{
+	text-align: center;
+	width:38%;
+	float: left;
+}
+.text_block p{
+	text-align: left;
 }
