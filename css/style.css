@@ -25,7 +25,7 @@ body{
 .top_header{
 	height: 120px;
 	background: url(../img/background_nav.jpg) no-repeat;
-	background-Size: cover;
+	background-size: cover;
 	width: 100%;
 }
 .main_header nav{
@@ -35,7 +35,16 @@ body{
 	background: #353333;
 	line-height: 60px;
 	position: relative;
-}  
+}
+.main_header.navFixed {
+	padding-bottom: 60px;
+}
+.navFixed nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
 .main_header nav ul li{
 	list-style: none;
 	display: inline-block;
@@ -49,6 +58,7 @@ body{
 	top: 13px;
 	right: 5%
 }
+
 .main_header .language li{
 	list-style: none;
 	float: left;
@@ -71,8 +81,9 @@ li.ru a{
 }
 .social{
 	position: fixed;
-	right: 5%;
+	left: 96%;
 	top: 50%;
+	z-index: 3;
 	margin-top: -150px;
 }
 .social li{
@@ -83,9 +94,10 @@ li.ru a{
 	width: 30px;
 	height: 30px;
 	margin-top: 30px;
-	background-image: url(../img/social_icons.png);
+	background: url(../img/social_icons.png), #191919;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 15px;
 }
 li.facebook a{
 	background-position: 0 -30px;
@@ -125,18 +137,77 @@ li.vk a{
 	height: auto;
 }
 /****************************/
+.section1,.section2,.section3{
+	border-bottom: 40px solid #333;
+	position: relative;
+	overflow: hidden;
+} 
+.title{
+	position: relative; 
+	height: 40px;  
+	text-indent: 50px;
+	text-align: left;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+.title:before{
+	content: "";
+	display: block;
+	top: 0;
+	position: absolute;
+	width: 5000px;
+	left: -5000px;
+	height: inherit;
+	background: inherit;
+}
+.title:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 5000px;
+	right: -5000px;
+	height: inherit;
+	background: inherit;
+}
+
 .img_block{
 	width: 62%;
 	float: left;
+	margin-top: 5%;
+    padding: 2% 5%;
 }
 .img_block img{
 	width: 100%;
 }
+.section3 .img_block img{
+	width: 65%
+}
 .text_block{
 	text-align: center;
 	width:38%;
+	margin-top: 3%;
 	float: left;
 }
+.text_block >img{
+	max-width: 75%;
+	margin-bottom: 10px;
+}
 .text_block p{
-	text-align: left;
+	text-align: justify;
+	text-indent: 3em;
+}
+footer{
+	padding:20px;
+	background: #403c3c;
+}
+footer .forma{
+	border: 1px solid #ccc;
+	background: url(../img/subscribe_bg.png) no-repeat;
+}
+footer .forma span{
+	text-transform: uppercase;
+	font-size: 20px;
+	padding:20px;
+	float: right;
 }
